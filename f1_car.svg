@@ -4,11 +4,15 @@
       /* 'drive' 애니메이션을 5초간 무한 반복 */
       animation: drive 5s infinite linear;
       font-size: 40px; /* 자동차 크기 */
+      /* 자동차 이모지를 뒤집어서 반대 방향으로 향하게 함 */
+      transform: scaleX(-1); 
     }
 
     @keyframes drive {
-      from { transform: translateX(-10%); } /* 왼쪽 밖에서 시작 */
-      to { transform: translateX(110%); } /* 오른쪽 밖으로 사라짐 */
+      /* 시작 위치: 오른쪽 밖 (110%) */
+      from { transform: translateX(110%); } 
+      /* 끝 위치: 왼쪽 밖 (-10%) */
+      to { transform: translateX(-10%); } 
     }
 
     /* (선택) 다크/라이트 모드에 따라 트랙 색 변경 */
@@ -25,6 +29,6 @@
   <g class="car">
     <text x="0" y="50">🏎️</text>
   </g>
-
+  
   <line class="track" x1="0" y1="70" x2="100%" y2="70" stroke-width="2" stroke-dasharray="10 5"/>
 </svg>
