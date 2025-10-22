@@ -16,4 +16,4 @@
 
 ## 📊 깃허브 통계 (My GitHub Stats)
 
-[![[본인ID]의 깃허브 통계](https://github-readme-stats.vercel.app/api?username=내ID&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+[![[본인ID]의 깃허브 통계](https://github-readme-stats.vercel.app/api?username=JAEJUN0124&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
