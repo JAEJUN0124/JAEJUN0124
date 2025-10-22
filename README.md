@@ -1,4 +1,4 @@
-![F1 Car Animation](f1_car.svg)
+![F1 Car Animation](f1_car.svg?v=2)
 
 # 안녕하세요, [황재준]입니다! 👋
 
