@@ -1,16 +1,13 @@
-## Hi there 👋
+# 안녕하세요, [본인 이름]입니다! 👋
 
-<!--
-**JAEJUN0124/JAEJUN0124** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- 🔭 저는 현재 [공부/작업 중인 것]을 하고 있습니다. (예: 안드로이드 앱 개발)
+- 🌱 요즘 [관심사]에 대해 배우고 있습니다. (예: F1 레이싱 룰)
+- 📫 저에게 연락하시려면: [이메일 주소]
+- ⚡ 관심사: [F1, 안드로이드, ... ]
 
-Here are some ideas to get you started:
+<br/> ## 🛠️ 기술 스택 (Skills)
+<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=Android&logoColor=white">
+<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=Kotlin&logoColor=white">
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white">
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<br/>
