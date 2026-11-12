@@ -23,6 +23,10 @@ SUBJECT  Formula 1 · Race data · Small tools
 | `DSC_0007` | [Project_Apple_Eye](https://github.com/JAEJUN0124/Project_Apple_Eye) | Screen-reading puzzle helper with an on-screen overlay | Python · PyQt5 |
 | `DSC_0008` | [figure-project](https://github.com/JAEJUN0124/figure-project) | Next up | — |
 
+## ▶ Publication
+
+Hwang, J., Kim, M. (2026). 투자 과열 종목을 제한한 섹터별 밸류에이션 기반 포트폴리오 최적화 시스템 구현 (Implementation of a Sector-Based Valuation Portfolio Optimization System That Restricts Overheated Stocks). *한국정보통신설비학회 2026 하계학술대회*, pp. 93–97. [earticle](https://www.earticle.net/Article/A493109)
+
 ## ▶ Stack
 
 <p>
