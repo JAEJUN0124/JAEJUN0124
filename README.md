@@ -15,12 +15,13 @@ SUBJECT  Formula 1 · Race data · Small tools
 | Frame | Project | Subject | Stack |
 | :-- | :-- | :-- | :-- |
 | `DSC_0001` | Tailor shop manager · Private | CRM/PWA for customers, schedules and rentals · 79 customer records (Nov 2026) | TypeScript · PWA |
-| `DSC_0002` | [defect-sorting](https://github.com/JAEJUN0124/defect-sorting) | Operator HMI for a conveyor and robot-arm defect sorting line | React · Vite · WebSocket |
-| `DSC_0003` | [f1-strategy-simulator](https://github.com/JAEJUN0124/f1-strategy-simulator) | F1 tyre strategy simulator | Flutter · FastAPI · FastF1 |
-| `DSC_0004` | [F1-Strategy-Optimizer](https://github.com/JAEJUN0124/F1-Strategy-Optimizer) | Concept and screens for the strategy simulator | Design |
-| `DSC_0005` | [Trading-Journal-App-Design](https://github.com/JAEJUN0124/Trading-Journal-App-Design) | Trading journal with performance analytics | React · TypeScript · Recharts |
-| `DSC_0006` | [Project_Apple_Eye](https://github.com/JAEJUN0124/Project_Apple_Eye) | Screen-reading puzzle helper with an on-screen overlay | Python · PyQt5 |
-| `DSC_0007` | [figure-project](https://github.com/JAEJUN0124/figure-project) | Next up | — |
+| `DSC_0002` | Hype-Free · Private | Hype-aware portfolio optimization · [conference paper (Aug 2026)](https://www.earticle.net/Article/A493109) | Flutter Web · FastAPI · Oracle |
+| `DSC_0003` | [defect-sorting](https://github.com/JAEJUN0124/defect-sorting) | Operator HMI for a conveyor and robot-arm defect sorting line | React · Vite · WebSocket |
+| `DSC_0004` | [f1-strategy-simulator](https://github.com/JAEJUN0124/f1-strategy-simulator) | F1 tyre strategy simulator | Flutter · FastAPI · FastF1 |
+| `DSC_0005` | [F1-Strategy-Optimizer](https://github.com/JAEJUN0124/F1-Strategy-Optimizer) | Concept and screens for the strategy simulator | Design |
+| `DSC_0006` | [Trading-Journal-App-Design](https://github.com/JAEJUN0124/Trading-Journal-App-Design) | Trading journal with performance analytics | React · TypeScript · Recharts |
+| `DSC_0007` | [Project_Apple_Eye](https://github.com/JAEJUN0124/Project_Apple_Eye) | Screen-reading puzzle helper with an on-screen overlay | Python · PyQt5 |
+| `DSC_0008` | [figure-project](https://github.com/JAEJUN0124/figure-project) | Next up | — |
 
 ## ▶ Stack
 
