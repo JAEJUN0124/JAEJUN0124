@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="JAEJUN0124 — DSC_0124.JPG">
+  <title>JAEJUN0124 — DSC_0124.JPG</title>
+  <defs>
+    <clipPath id="frame"><rect width="1200" height="380" rx="10"/></clipPath>
+
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#27344f"/>
+      <stop offset="0.45" stop-color="#5d6c8a"/>
+      <stop offset="0.8" stop-color="#c79a86"/>
+      <stop offset="1" stop-color="#f0c79a"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#262a35"/>
+      <stop offset="1" stop-color="#0c0d11"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.25" stop-color="#fff3d6" stop-opacity="0.95"/>
+      <stop offset="0.6" stop-color="#ffc98a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffc98a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.72">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.62"/>
+    </radialGradient>
+
+    <filter id="bokeh" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+    <filter id="smear" x="-10%" y="-200%" width="120%" height="500%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="soft" x="-10%" y="-100%" width="120%" height="300%"><feGaussianBlur stdDeviation="1.2"/></filter>
+    <filter id="glow" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="124"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  1 0 0 0 0  1 0 0 0 0  0 0 0 0 1"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- 사진: 해 질 녘 트랙 옆에서 흔들린 한 장 -->
+    <rect width="1200" height="236" fill="url(#sky)"/>
+    <circle cx="842" cy="214" r="150" fill="url(#sun)"/>
+
+    <!-- 먼 그랜드스탠드와 조명탑 -->
+    <path d="M0 252 V204 H70 V190 H210 V178 H420 L470 160 H640 V186 H720 V204 H900 V214 H1010 V196 H1130 V208 H1200 V252 Z" fill="#1d2433" opacity="0.92" filter="url(#soft)"/>
+    <path d="M300 178 V112 M286 112 H314 M560 160 V96 M546 96 H574 M1070 196 V128 M1056 128 H1084" stroke="#1d2433" stroke-width="4" opacity="0.92" filter="url(#soft)"/>
+
+    <rect y="236" width="1200" height="144" fill="url(#road)"/>
+    <ellipse cx="842" cy="252" rx="260" ry="20" fill="#ffd9a8" opacity="0.28" filter="url(#bokeh)"/>
+
+    <!-- 초점 나간 불빛 -->
+    <g filter="url(#bokeh)">
+      <circle cx="300" cy="112" r="20" fill="#fff6dc" opacity="0.95"/>
+      <circle cx="560" cy="96" r="22" fill="#fff6dc" opacity="0.95"/>
+      <circle cx="1070" cy="128" r="19" fill="#fff6dc" opacity="0.9"/>
+      <circle cx="118" cy="214" r="13" fill="#ff5a4a" opacity="0.8"/>
+      <circle cx="232" cy="206" r="10" fill="#6fd6ff" opacity="0.7"/>
+      <circle cx="454" cy="200" r="12" fill="#ffd36a" opacity="0.8"/>
+      <circle cx="668" cy="214" r="10" fill="#7dffb0" opacity="0.6"/>
+      <circle cx="980" cy="222" r="12" fill="#ff5a4a" opacity="0.75"/>
+      <circle cx="1150" cy="220" r="11" fill="#ffd36a" opacity="0.75"/>
+    </g>
+
+    <!-- 느린 셔터에 끌린 불빛 궤적 -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M-30 338 C 300 312, 700 292, 1230 262" stroke="#ff3b30" stroke-width="16" opacity="0.5" filter="url(#smear)"/>
+      <path d="M-30 338 C 300 312, 700 292, 1230 262" stroke="#ff6a5c" stroke-width="4" opacity="0.95" filter="url(#soft)"/>
+      <path d="M-30 356 C 320 328, 720 306, 1230 276" stroke="#fff1c4" stroke-width="14" opacity="0.4" filter="url(#smear)"/>
+      <path d="M-30 356 C 320 328, 720 306, 1230 276" stroke="#fff8e6" stroke-width="3" opacity="0.9" filter="url(#soft)"/>
+      <path d="M-30 322 C 280 300, 640 282, 1230 252" stroke="#ff3b30" stroke-width="2" opacity="0.55" filter="url(#soft)"/>
+    </g>
+
+    <!-- 옛 CCD 느낌: 뜬 암부, 입자, 주변부 어둠 -->
+    <rect width="1200" height="380" fill="#8fa3c8" opacity="0.1"/>
+    <rect width="1200" height="380" filter="url(#grain)" opacity="0.3" style="mix-blend-mode:overlay"/>
+    <rect width="1200" height="380" fill="url(#vignette)"/>
+
+    <!-- 화면 표시(OSD) -->
+    <g font-family="Consolas,Menlo,'DejaVu Sans Mono','Courier New',monospace" font-weight="700" fill="#fff"
+       stroke="#000" stroke-opacity="0.55" stroke-width="3" paint-order="stroke" stroke-linejoin="round">
+      <!-- 재생 모드 · 폴더-파일 번호 -->
+      <rect x="40" y="30" width="34" height="26" rx="4" fill="none" stroke="#fff" stroke-opacity="1" stroke-width="2.5"/>
+      <path d="M52 36 L65 43 L52 50 Z" stroke="none"/>
+      <text x="88" y="51" font-size="22" letter-spacing="1.5">100-0124</text>
+
+      <!-- 화질 · 배터리 -->
+      <text x="1076" y="51" font-size="22" letter-spacing="1.5" text-anchor="end">3M FINE</text>
+      <rect x="1096" y="32" width="52" height="24" rx="3" fill="none" stroke="#fff" stroke-opacity="1" stroke-width="2.5"/>
+      <rect x="1148" y="39" width="6" height="10" stroke="none"/>
+      <path d="M1101 37 h12 v14 h-12 z M1116 37 h12 v14 h-12 z M1131 37 h12 v14 h-12 z" stroke="none"/>
+
+      <!-- 이름 · 노출 정보 -->
+      <text x="42" y="306" font-size="46" letter-spacing="3">JAEJUN0124</text>
+      <text x="44" y="342" font-size="19" letter-spacing="1.5" xml:space="preserve">F2.8   1/60   ISO 400   +0.0</text>
+    </g>
+
+    <!-- 초점 틀 -->
+    <path d="M520 122 H500 V142 M680 122 H700 V142 M520 222 H500 V202 M680 222 H700 V202"
+          fill="none" stroke="#86ff6b" stroke-width="3" stroke-linecap="square"/>
+
+    <!-- 날짜 각인 -->
+    <g font-family="Consolas,Menlo,'DejaVu Sans Mono','Courier New',monospace" font-weight="700" font-size="34" letter-spacing="4" text-anchor="end">
+      <text x="1158" y="342" fill="#ff7a00" opacity="0.9" filter="url(#glow)">'26 11 12</text>
+      <text x="1158" y="342" fill="#ffa23a">'26 11 12</text>
+    </g>
+  </g>
+</svg>

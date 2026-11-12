@@ -1,23 +1,41 @@
-![F1 Car Animation](f1_car.svg?v=2)
+<p align="center">
+  <img src="digicam-banner.svg" alt="JAEJUN0124 — DSC_0124.JPG" width="100%">
+</p>
 
-# 안녕하세요, 황재준입니다! 
+```text
+FILE     DSC_0124.JPG
+OWNER    Hwang Jaejun
+MODE     Student developer
+FOCUS    Mobile apps · Web front-end
+SUBJECT  Formula 1 · Race data · Small tools
+```
 
-- 🔭 저는 현재 안드로이드 앱 졸업 프로젝트을 하고 있습니다.
-- 🌱 요즘 앱 개발에 대해 배우고 있습니다.
-- 📫 저에게 연락하시려면: jaejuno123w@gmail.com
-- ⚡ 관심사: [F1, 안드로이드, ... ]
+## ▶ Projects
 
-<br/> 
+| Frame | Project | Subject | Stack |
+| :-- | :-- | :-- | :-- |
+| `DSC_0001` | [defect-sorting](https://github.com/JAEJUN0124/defect-sorting) | Operator HMI for a conveyor and robot-arm defect sorting line | React · Vite · WebSocket |
+| `DSC_0002` | [f1-strategy-simulator](https://github.com/JAEJUN0124/f1-strategy-simulator) | F1 tyre strategy simulator | Flutter · FastAPI · FastF1 |
+| `DSC_0003` | [F1-Strategy-Optimizer](https://github.com/JAEJUN0124/F1-Strategy-Optimizer) | Concept and screens for the strategy simulator | Design |
+| `DSC_0004` | [Trading-Journal-App-Design](https://github.com/JAEJUN0124/Trading-Journal-App-Design) | Trading journal with performance analytics | React · TypeScript · Recharts |
+| `DSC_0005` | [Project_Apple_Eye](https://github.com/JAEJUN0124/Project_Apple_Eye) | Screen-reading puzzle helper with an on-screen overlay | Python · PyQt5 |
+| `DSC_0006` | [figure-project](https://github.com/JAEJUN0124/figure-project) | Next up | — |
 
-## 🛠️ Tech Stack
+## ▶ Stack
 
-<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=Android&logoColor=white">
-<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=Kotlin&logoColor=white">
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white">
-<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=Flutter&logoColor=white">
+<p>
+  <img src="https://img.shields.io/badge/Flutter-1b1b1b?style=flat-square&logo=flutter&logoColor=ffa23a" alt="Flutter">
+  <img src="https://img.shields.io/badge/Kotlin-1b1b1b?style=flat-square&logo=kotlin&logoColor=ffa23a" alt="Kotlin">
+  <img src="https://img.shields.io/badge/Android-1b1b1b?style=flat-square&logo=android&logoColor=ffa23a" alt="Android">
+  <img src="https://img.shields.io/badge/React-1b1b1b?style=flat-square&logo=react&logoColor=ffa23a" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-1b1b1b?style=flat-square&logo=typescript&logoColor=ffa23a" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Python-1b1b1b?style=flat-square&logo=python&logoColor=ffa23a" alt="Python">
+  <img src="https://img.shields.io/badge/FastAPI-1b1b1b?style=flat-square&logo=fastapi&logoColor=ffa23a" alt="FastAPI">
+  <img src="https://img.shields.io/badge/Figma-1b1b1b?style=flat-square&logo=figma&logoColor=ffa23a" alt="Figma">
+</p>
 
-<br/>
+## ▶ Contact
 
-## 📊 My GitHub Stats
+`jaejuno123w@gmail.com`
 
-[![[본인ID]의 깃허브 통계](https://github-readme-stats.vercel.app/api?username=JAEJUN0124&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+<p align="center"><sub>F2.8 · 1/60 · ISO 400 · '26 11 12</sub></p>
