@@ -20,6 +20,7 @@ SUBJECT  Formula 1 · Race data · Small tools
 | `DSC_0004` | [Trading-Journal-App-Design](https://github.com/JAEJUN0124/Trading-Journal-App-Design) | Trading journal with performance analytics | React · TypeScript · Recharts |
 | `DSC_0005` | [Project_Apple_Eye](https://github.com/JAEJUN0124/Project_Apple_Eye) | Screen-reading puzzle helper with an on-screen overlay | Python · PyQt5 |
 | `DSC_0006` | [figure-project](https://github.com/JAEJUN0124/figure-project) | Next up | — |
+| `DSC_0007` | Tailor shop manager · Private | CRM/PWA for customers, schedules and rentals, in daily use | TypeScript · PWA |
 
 ## ▶ Stack
 
