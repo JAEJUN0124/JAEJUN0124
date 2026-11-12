@@ -4,25 +4,46 @@
     <clipPath id="frame"><rect width="1200" height="380" rx="10"/></clipPath>
 
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#27344f"/>
-      <stop offset="0.45" stop-color="#5d6c8a"/>
-      <stop offset="0.8" stop-color="#c79a86"/>
-      <stop offset="1" stop-color="#f0c79a"/>
+      <stop offset="0" stop-color="#151b3d"/>
+      <stop offset="0.36" stop-color="#3b2f6e"/>
+      <stop offset="0.62" stop-color="#a84e7c"/>
+      <stop offset="0.84" stop-color="#ee8850"/>
+      <stop offset="1" stop-color="#ffd08c"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3a872"/>
+      <stop offset="0.45" stop-color="#b0607e"/>
+      <stop offset="1" stop-color="#4b3769"/>
     </linearGradient>
     <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#262a35"/>
-      <stop offset="1" stop-color="#0c0d11"/>
+      <stop offset="0" stop-color="#34323f"/>
+      <stop offset="1" stop-color="#0c0c11"/>
+    </linearGradient>
+    <linearGradient id="led" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6f7bff"/>
+      <stop offset="0.5" stop-color="#d250ff"/>
+      <stop offset="1" stop-color="#ff5fa6"/>
     </linearGradient>
     <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
       <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="0.25" stop-color="#fff3d6" stop-opacity="0.95"/>
-      <stop offset="0.6" stop-color="#ffc98a" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#ffc98a" stop-opacity="0"/>
+      <stop offset="0.22" stop-color="#fff1d0" stop-opacity="0.95"/>
+      <stop offset="0.6" stop-color="#ffb877" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffb877" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.72">
       <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
       <stop offset="1" stop-color="#000" stop-opacity="0.62"/>
     </radialGradient>
+
+    <!-- 호텔 지붕 격자 조명: 마름모 격자의 점들 -->
+    <pattern id="dotGrid" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="9" height="9" fill="#000"/>
+      <circle cx="4.5" cy="4.5" r="1.7" fill="#fff"/>
+    </pattern>
+    <mask id="dots"><rect width="1200" height="380" fill="url(#dotGrid)"/></mask>
+    <clipPath id="canopy">
+      <path d="M540 252 C560 150 640 118 720 140 C780 156 800 172 830 170 C870 166 900 112 990 104 C1070 98 1120 170 1128 252 Z"/>
+    </clipPath>
 
     <filter id="bokeh" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
     <filter id="smear" x="-10%" y="-200%" width="120%" height="500%"><feGaussianBlur stdDeviation="5"/></filter>
@@ -35,37 +56,89 @@
   </defs>
 
   <g clip-path="url(#frame)">
-    <!-- 사진: 해 질 녘 트랙 옆에서 흔들린 한 장 -->
-    <rect width="1200" height="236" fill="url(#sky)"/>
-    <circle cx="842" cy="214" r="150" fill="url(#sun)"/>
+    <!-- 사진: 야스 마리나, 해 진 직후 호텔 아래로 들어가는 구간을 마리나 쪽에서 -->
+    <rect width="1200" height="256" fill="url(#sky)"/>
+    <circle cx="205" cy="240" r="185" fill="url(#sun)"/>
 
-    <!-- 먼 그랜드스탠드와 조명탑 -->
-    <path d="M0 252 V204 H70 V190 H210 V178 H420 L470 160 H640 V186 H720 V204 H900 V214 H1010 V196 H1130 V208 H1200 V252 Z" fill="#1d2433" opacity="0.92" filter="url(#soft)"/>
-    <path d="M300 178 V112 M286 112 H314 M560 160 V96 M546 96 H574 M1070 196 V128 M1056 128 H1084" stroke="#1d2433" stroke-width="4" opacity="0.92" filter="url(#soft)"/>
+    <!-- 먼 건물들 -->
+    <path d="M0 256 V236 H46 V228 H98 V240 H150 V222 H188 V234 H262 V226 H318 V238 H392 V230 H452 V242 H540 V256 Z"
+          fill="#2b2350" opacity="0.8" filter="url(#soft)"/>
 
-    <rect y="236" width="1200" height="144" fill="url(#road)"/>
-    <ellipse cx="842" cy="252" rx="260" ry="20" fill="#ffd9a8" opacity="0.28" filter="url(#bokeh)"/>
+    <!-- 바닥과 마리나 물 -->
+    <rect y="250" width="1200" height="130" fill="#15161f"/>
+    <path d="M0 250 H700 C560 275 300 310 0 336 Z" fill="url(#water)"/>
+    <ellipse cx="205" cy="264" rx="170" ry="9" fill="#ffe2b4" opacity="0.6" filter="url(#bokeh)"/>
+    <path d="M20 282 H120 M150 290 H290 M60 300 H170 M210 306 H300 M330 280 H440 M380 292 H470 M20 316 H110 M470 272 H560 M540 262 H640"
+          stroke="#ffe6c4" stroke-opacity="0.32" stroke-width="2" stroke-linecap="round" filter="url(#soft)"/>
+
+    <!-- 요트 -->
+    <g filter="url(#soft)">
+      <g stroke="#e6ddea" stroke-opacity="0.75" stroke-width="1.6" fill="none">
+        <path d="M70 262 V176 M148 266 V198 M236 262 V168 M330 264 V190 M412 262 V204"/>
+        <path d="M70 186 L96 258 M236 178 L266 258 M330 200 L352 260" stroke-opacity="0.35"/>
+      </g>
+      <g fill="#efe9f2" opacity="0.88">
+        <path d="M44 262 H102 L94 272 H52 Z"/>
+        <path d="M128 266 H172 L166 274 H134 Z"/>
+        <path d="M206 262 H272 L262 273 H216 Z"/>
+        <path d="M306 264 H358 L351 273 H313 Z"/>
+        <path d="M392 262 H436 L430 270 H398 Z"/>
+      </g>
+    </g>
+
+    <!-- 호텔: 두 동과 그 사이 다리, 위를 덮은 격자 지붕 -->
+    <g filter="url(#soft)">
+      <path d="M540 252 C560 150 640 118 720 140 C780 156 800 172 830 170 C870 166 900 112 990 104 C1070 98 1120 170 1128 252 Z"
+            fill="#2a2058" opacity="0.78"/>
+      <rect x="590" y="172" width="150" height="82" rx="8" fill="#1d1a3e" opacity="0.75"/>
+      <rect x="902" y="158" width="172" height="96" rx="8" fill="#1d1a3e" opacity="0.75"/>
+      <rect x="738" y="196" width="166" height="18" fill="#1d1a3e" opacity="0.75"/>
+      <path d="M600 186 H730 M600 200 H730 M600 214 H730 M600 228 H730 M600 242 H730 M912 172 H1064 M912 186 H1064 M912 200 H1064 M912 214 H1064 M912 228 H1064 M912 242 H1064 M746 205 H896"
+            stroke="#ffd79a" stroke-opacity="0.6" stroke-width="2.4" stroke-dasharray="4 5"/>
+    </g>
+    <g clip-path="url(#canopy)">
+      <rect x="530" y="95" width="610" height="160" fill="url(#led)" mask="url(#dots)" opacity="0.75" filter="url(#glow)"/>
+      <rect x="530" y="95" width="610" height="160" fill="url(#led)" mask="url(#dots)"/>
+    </g>
+
+    <!-- 다리 밑 통로 -->
+    <path d="M790 252 V224 Q820 214 852 224 V252 Z" fill="#090910"/>
+    <circle cx="821" cy="240" r="7" fill="#ffd9a0" opacity="0.7" filter="url(#bokeh)"/>
+
+    <!-- 트랙과 하늘색 런오프 -->
+    <path d="M848 252 C900 285 1000 335 1090 380 H1200 V298 C1100 280 960 262 880 252 Z" fill="#1c95a0" opacity="0.6"/>
+    <path d="M60 380 C380 330 680 285 796 252 H848 C900 285 1000 335 1090 380 Z" fill="url(#road)"/>
+    <g fill="none" stroke="#f3f0f5" stroke-opacity="0.7" stroke-width="2.2" filter="url(#soft)">
+      <path d="M60 380 C380 330 680 285 796 252"/>
+      <path d="M848 252 C900 285 1000 335 1090 380"/>
+    </g>
+    <!-- 가드레일 -->
+    <path d="M0 352 C330 312 640 276 782 250" fill="none" stroke="#b9b4c4" stroke-opacity="0.45" stroke-width="3" filter="url(#soft)"/>
+
+    <!-- 조명탑 -->
+    <path d="M452 278 V74 M434 74 H470 M1162 262 V88 M1146 88 H1178" stroke="#161728" stroke-width="4" filter="url(#soft)"/>
 
     <!-- 초점 나간 불빛 -->
     <g filter="url(#bokeh)">
-      <circle cx="300" cy="112" r="20" fill="#fff6dc" opacity="0.95"/>
-      <circle cx="560" cy="96" r="22" fill="#fff6dc" opacity="0.95"/>
-      <circle cx="1070" cy="128" r="19" fill="#fff6dc" opacity="0.9"/>
-      <circle cx="118" cy="214" r="13" fill="#ff5a4a" opacity="0.8"/>
-      <circle cx="232" cy="206" r="10" fill="#6fd6ff" opacity="0.7"/>
-      <circle cx="454" cy="200" r="12" fill="#ffd36a" opacity="0.8"/>
-      <circle cx="668" cy="214" r="10" fill="#7dffb0" opacity="0.6"/>
-      <circle cx="980" cy="222" r="12" fill="#ff5a4a" opacity="0.75"/>
-      <circle cx="1150" cy="220" r="11" fill="#ffd36a" opacity="0.75"/>
+      <circle cx="452" cy="74" r="22" fill="#fff6dc" opacity="0.95"/>
+      <circle cx="1162" cy="88" r="20" fill="#fff6dc" opacity="0.92"/>
+      <circle cx="70" cy="258" r="7" fill="#ffd36a" opacity="0.8"/>
+      <circle cx="236" cy="258" r="8" fill="#ffd36a" opacity="0.8"/>
+      <circle cx="330" cy="260" r="6" fill="#fff0c8" opacity="0.75"/>
+      <circle cx="560" cy="246" r="9" fill="#6fd6ff" opacity="0.65"/>
+      <circle cx="700" cy="244" r="9" fill="#ffd36a" opacity="0.7"/>
+      <circle cx="930" cy="246" r="10" fill="#ff5a8a" opacity="0.6"/>
+      <circle cx="1100" cy="248" r="10" fill="#ffd36a" opacity="0.7"/>
     </g>
 
-    <!-- 느린 셔터에 끌린 불빛 궤적 -->
+    <!-- 느린 셔터에 끌린 후미등 궤적 -->
     <g fill="none" stroke-linecap="round">
-      <path d="M-30 338 C 300 312, 700 292, 1230 262" stroke="#ff3b30" stroke-width="16" opacity="0.5" filter="url(#smear)"/>
-      <path d="M-30 338 C 300 312, 700 292, 1230 262" stroke="#ff6a5c" stroke-width="4" opacity="0.95" filter="url(#soft)"/>
-      <path d="M-30 356 C 320 328, 720 306, 1230 276" stroke="#fff1c4" stroke-width="14" opacity="0.4" filter="url(#smear)"/>
-      <path d="M-30 356 C 320 328, 720 306, 1230 276" stroke="#fff8e6" stroke-width="3" opacity="0.9" filter="url(#soft)"/>
-      <path d="M-30 322 C 280 300, 640 282, 1230 252" stroke="#ff3b30" stroke-width="2" opacity="0.55" filter="url(#soft)"/>
+      <path d="M470 384 C610 332 750 286 820 254" stroke="#ff3b30" stroke-width="16" opacity="0.5" filter="url(#smear)"/>
+      <path d="M470 384 C610 332 750 286 820 254" stroke="#ff6a5c" stroke-width="4" opacity="0.95" filter="url(#soft)"/>
+      <path d="M580 384 C690 336 784 290 826 254" stroke="#ff3b30" stroke-width="12" opacity="0.4" filter="url(#smear)"/>
+      <path d="M580 384 C690 336 784 290 826 254" stroke="#ff6a5c" stroke-width="3" opacity="0.85" filter="url(#soft)"/>
+      <path d="M330 384 C520 328 720 284 814 254" stroke="#fff1c4" stroke-width="10" opacity="0.3" filter="url(#smear)"/>
+      <path d="M330 384 C520 328 720 284 814 254" stroke="#fff8e6" stroke-width="2.5" opacity="0.75" filter="url(#soft)"/>
     </g>
 
     <!-- 옛 CCD 느낌: 뜬 암부, 입자, 주변부 어둠 -->
